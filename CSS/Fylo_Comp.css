@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0c122c;
+    background-image: url(../images/bg-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% -70%;
+}
+@media (max-width:767px) {
+    body {
+        background-image: url(../images/bg-mobile.png);
+        background-size: 150%;
+        background-position: 0% 0%;
+    }
+}
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media (min-width:1440px) {
+    .container {
+        width: 1370px;
+    }
+}
+body .container .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 64%;
+}
+@media (max-width: 991px ) {
+    body .container .content {
+        flex-flow: wrap;
+        width: 85%;
+    }
+}
+.container  .content > div {
+    background-color: #1e2c69;
+}
+.logo-icons {
+    padding: 42px;
+    border-radius: 10px;
+    border-top-right-radius: 35% 60%;
+    flex-basis: 37%;
+}
+.storage {
+    flex-basis: 54%;
+    color: white;
+    padding: 35px;
+    position: relative;
+    top: 23px;
+    border-radius: 10px;
+}
+@media (max-width:991px) {
+    .storage {
+        flex-basis: 100%;
+    }
+    .logo-icons {
+        flex-basis: 100%;
+        flex-grow: 1;
+    }
+}
+.storage p {
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+.meter {
+    background-color: #151e49;
+    height: 20px;
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.meter > span {
+    display: block;
+    width: 75%;
+    position: absolute;
+    left: 0;
+    background-image: linear-gradient(to right, #ff9d94 0%, #fd4f94 100%);
+    height: 70%;
+    border-radius: 10px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    
+}
+.meter > span div {
+    display: block;
+    position: absolute;
+    background-color: white;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    top: 50%;
+    right: 2px;
+    transform: translateY(-50%);
+}
+.storage .unit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.storage .unit p {
+    flex-basis: 50px;
+    font-size: 11px;
+}
+.storage p span:first-of-type {
+    font-weight: bold;
+}
+.storage p span:first-of-type span {
+    position: relative;
+    top: 1px;
+}
+.logo-icons img {
+    height: 45px;
+    margin-bottom: 40px;
+}
+.logo-icons i {
+    color: #6a7acf;
+    font-size: 22px;
+    padding: 12px;
+    background-color: #0c122c;
+    border-radius: 8px;
+}
+.logo-icons i:not(:first-of-type) {
+    margin-left: 15px;
+}
+.count {
+    background-color: white;
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    padding: 24px;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    top: -45px;
+    right: 35px;
+    height: 72px;
+}
+.count::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 1px;
+    border: 20px solid white;
+    border-color: transparent white transparent transparent;
+    bottom: -20px;
+    right: 0;
+}
+@media (max-width:991px) {
+    .count::after {
+        display: none;
+    }
+    .count {
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.count p {
+    font-size: 12px;
+    color: #9999a1;
+    position: absolute;
+    margin: 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.count p span {
+    font-weight: bold;
+    color: black;
+}
+.count p span:nth-child(1) {
+    font-size: 26px;
+}
+.count p span:nth-child(2) {
+    position: relative;
+    bottom: 1px;
+    font-size: 30px;
+}
+.count p span:nth-child(3) {
+    position: relative;
+    top: 1px;
+    font-size: 30px;
+    margin-right: 7px;
+}
