@@ -66,6 +66,11 @@ body .container .content {
 }
 @media (max-width: 1199px ) {
     body .container .content {
+        width: 70%;
+    }
+}
+@media (max-width: 991px ) {
+    body .container .content {
         flex-flow: wrap;
         width: 50%;
     }
@@ -93,7 +98,7 @@ body .container .content {
     top: 23px;
     border-radius: 10px;
 }
-@media (max-width:1199px) {
+@media (max-width:991px) {
     .storage {
         flex-basis: 100%;
     }
@@ -191,7 +196,7 @@ body .container .content {
     bottom: -20px;
     right: 0;
 }
-@media (max-width:1199px) {
+@media (max-width:991px) {
     .count::after {
         display: none;
     }
