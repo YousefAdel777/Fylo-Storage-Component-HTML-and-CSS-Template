@@ -16,9 +16,9 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #0c122c;
     background-image: url(../images/bg-desktop.png);
-    background-size: cover;
+    background-size: 250vh;
     background-repeat: no-repeat;
-    background-position: 0% -70%;
+    background-position: 0% -65%;
 }
 @media (max-width:1199px) {
     body {
