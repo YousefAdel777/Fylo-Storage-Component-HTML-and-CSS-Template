@@ -20,7 +20,7 @@ body {
     background-repeat: no-repeat;
     background-position: 0% -70%;
 }
-@media (max-width:767px) {
+@media (max-width:1199px) {
     body {
         background-image: url(../images/bg-mobile.png);
         background-size: 150%;
@@ -64,7 +64,13 @@ body .container .content {
     transform: translate(-50% , -50%);
     width: 64%;
 }
-@media (max-width: 991px ) {
+@media (max-width: 1199px ) {
+    body .container .content {
+        flex-flow: wrap;
+        width: 50%;
+    }
+}
+@media (max-width: 767px ) {
     body .container .content {
         flex-flow: wrap;
         width: 85%;
@@ -87,7 +93,7 @@ body .container .content {
     top: 23px;
     border-radius: 10px;
 }
-@media (max-width:991px) {
+@media (max-width:1199px) {
     .storage {
         flex-basis: 100%;
     }
@@ -185,7 +191,7 @@ body .container .content {
     bottom: -20px;
     right: 0;
 }
-@media (max-width:991px) {
+@media (max-width:1199px) {
     .count::after {
         display: none;
     }
